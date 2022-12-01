@@ -5,9 +5,9 @@ import Prato from './componentes/Prato';
 function App() { 
 
   const [pratos, setPratos] = useState([])
-
+  
   useEffect(() => {
-    fetch('http://localhost:8000/api/pratos')
+    fetch('http://177.66.116.68:8001/api/pratos')
       .then(resposta => resposta.json())
       .then(dados => {
         setPratos(dados)
